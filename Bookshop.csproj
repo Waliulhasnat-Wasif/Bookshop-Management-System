@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E25CF25A-DD70-4C28-B26C-864B355B9D13}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Bookshop</RootNamespace>
+    <AssemblyName>Bookshop</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMenu.Designer.cs">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMenu2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMenu2.Designer.cs">
+      <DependentUpon>AdminMenu2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMenu3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMenu3.Designer.cs">
+      <DependentUpon>AdminMenu3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMenu4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMenu4.Designer.cs">
+      <DependentUpon>AdminMenu4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillClass.cs" />
+    <Compile Include="BillHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillHistory.Designer.cs">
+      <DependentUpon>BillHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookClass.cs" />
+    <Compile Include="BookStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookStatus.Designer.cs">
+      <DependentUpon>BookStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerUserMenu2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerUserMenu2.Designer.cs">
+      <DependentUpon>CustomerUserMenu2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeMenu.Designer.cs">
+      <DependentUpon>EmployeeMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMenu2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeMenu2.Designer.cs">
+      <DependentUpon>EmployeeMenu2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.Designer.cs">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SigningUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SigningUp.Designer.cs">
+      <DependentUpon>SigningUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplierMenu.Designer.cs">
+      <DependentUpon>SupplierMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierMenu2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplierMenu2.Designer.cs">
+      <DependentUpon>SupplierMenu2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserClass.cs" />
+    <Compile Include="CustomerUserMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerUserMenu.Designer.cs">
+      <DependentUpon>CustomerUserMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserStatus.Designer.cs">
+      <DependentUpon>UserStatus.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminMenu.resx">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMenu2.resx">
+      <DependentUpon>AdminMenu2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMenu3.resx">
+      <DependentUpon>AdminMenu3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMenu4.resx">
+      <DependentUpon>AdminMenu4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillHistory.resx">
+      <DependentUpon>BillHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookStatus.resx">
+      <DependentUpon>BookStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerUserMenu.resx">
+      <DependentUpon>CustomerUserMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerUserMenu2.resx">
+      <DependentUpon>CustomerUserMenu2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeMenu.resx">
+      <DependentUpon>EmployeeMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeMenu2.resx">
+      <DependentUpon>EmployeeMenu2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResetPassword.resx">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SigningUp.resx">
+      <DependentUpon>SigningUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SupplierMenu.resx">
+      <DependentUpon>SupplierMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplierMenu2.resx">
+      <DependentUpon>SupplierMenu2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserStatus.resx">
+      <DependentUpon>UserStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
